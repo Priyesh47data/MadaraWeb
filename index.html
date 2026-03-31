@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MadaraWeb — We Build Websites That Convert</title>
+  <meta name="description" content="DevCraft builds premium websites that turn visitors into paying clients. Landing pages, business sites, e-commerce & digital products." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <nav id="navbar">
+    <div class="container nav-inner">
+      <!-- Logo -->
+      <a href="#" class="nav-logo">Madara<span>Web</span></a>
+
+      <!-- Desktop links -->
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <!-- Theme toggle -->
+        <button id="theme-toggle" aria-label="Toggle theme">
+          <svg id="icon-sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"/><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/><line x1="4.93" y1="19.07" x2="7.76" y2="16.24"/><line x1="16.24" y1="7.76" x2="19.07" y2="4.93"/></svg>
+          <svg id="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+
+        <!-- CTA button -->
+        <a href="#contact" class="btn btn-primary nav-cta">Get Started →</a>
+
+        <!-- Hamburger (mobile) -->
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="mobile-nav" id="mobile-nav">
+      <a href="#hero" class="mobile-link">Home</a>
+      <a href="#services" class="mobile-link">Services</a>
+      <a href="#process" class="mobile-link">Process</a>
+      <a href="#portfolio" class="mobile-link">Portfolio</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+      <a href="#contact" class="btn btn-primary" style="margin-top:8px;justify-content:center;">Get Started →</a>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO SECTION
+  ============================================================ -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+    <div class="hero-grid"></div>
+
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-left">
+          <!-- Badge -->
+          <div class="hero-badge">
+            <div class="hero-badge-dot"></div>
+            Accepting new clients — limited spots
+          </div>
+
+          <!-- Headline -->
+          <h1 class="hero-headline">
+            We Build Websites That Turn<br/>
+            <span class="accent">Visitors Into Customers</span>
+          </h1>
+
+          <!-- Sub -->
+          <p class="hero-sub">
+            Custom-built, high-converting websites for businesses ready to grow.
+            From landing pages to full e-commerce — we craft every pixel with purpose.
+          </p>
+
+          <!-- CTAs -->
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Get Started →</a>
+            <a href="#portfolio" class="btn btn-ghost">View Our Work</a>
+          </div>
+
+          <!-- Stats -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-number">120<span>+</span></div>
+              <div class="stat-label">Projects Delivered</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">98<span>%</span></div>
+              <div class="stat-label">Client Satisfaction</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">3<span>x</span></div>
+              <div class="stat-label">Avg. Conversion Lift</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero right: animated mockup -->
+        <div class="hero-right">
+          <div class="hero-mockup">
+            <!-- Browser chrome -->
+            <div class="mockup-bar">
+              <div class="mockup-dot"></div>
+              <div class="mockup-dot"></div>
+              <div class="mockup-dot"></div>
+              <div class="mockup-url-bar">🔒 devcraft.studio/client-site</div>
+            </div>
+
+            <!-- Mini website art -->
+            <div class="mockup-hero-art">
+              <div class="art-nav">
+                <div class="art-logo"></div>
+                <div class="art-nav-links">
+                  <div class="art-link"></div>
+                  <div class="art-link"></div>
+                  <div class="art-link"></div>
+                </div>
+              </div>
+              <div class="art-body">
+                <div class="art-headline"></div>
+                <div class="art-headline-2"></div>
+                <div class="art-sub"></div>
+                <div class="art-sub-2"></div>
+                <div class="art-btns">
+                  <div class="art-btn-p"></div>
+                  <div class="art-btn-g"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Metrics -->
+            <div class="mockup-metrics">
+              <div class="metric-card">
+                <div class="metric-val green">+147%</div>
+                <div class="metric-lbl">Conversions</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-val">98</div>
+                <div class="metric-lbl">PageSpeed</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-val green">↑ 3.2s</div>
+                <div class="metric-lbl">Avg. Session</div>
+              </div>
+            </div>
+
+            <!-- Tiny chart -->
+            <div class="mockup-chart">
+              <div class="chart-bar" style="height:30%"></div>
+              <div class="chart-bar" style="height:45%"></div>
+              <div class="chart-bar" style="height:38%"></div>
+              <div class="chart-bar" style="height:60%"></div>
+              <div class="chart-bar" style="height:52%"></div>
+              <div class="chart-bar" style="height:75%"></div>
+              <div class="chart-bar" style="height:68%"></div>
+              <div class="chart-bar" style="height:90%"></div>
+              <div class="chart-bar" style="height:85%"></div>
+              <div class="chart-bar" style="height:100%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SERVICES SECTION
+  ============================================================ -->
+  <section id="services" class="section section-alt">
+    <div class="container">
+      <div class="section-label">What We Do</div>
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:20px;">
+        <div>
+          <h2 class="section-title">Services Built to<br/>Perform & Convert</h2>
+        </div>
+        <p class="section-sub" style="margin-bottom:0">Every service we offer is engineered around one core goal: turning your website into your best-performing salesperson.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <!-- Service 1 -->
+        <div class="service-card fade-up">
+          <div class="service-icon">🎯</div>
+          <div class="service-name">Landing Pages</div>
+          <p class="service-desc">Precision-built, single-goal pages designed to capture leads and drive action. A/B tested layouts with proven copy frameworks that convert cold traffic into warm leads.</p>
+          <div class="service-arrow">Learn more →</div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card fade-up" style="transition-delay:0.08s">
+          <div class="service-icon">🏢</div>
+          <div class="service-name">Business Websites</div>
+          <p class="service-desc">Professional multi-page websites that build trust, showcase your brand, and generate consistent inbound inquiries. Built for speed, SEO, and long-term growth.</p>
+          <div class="service-arrow">Learn more →</div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card fade-up" style="transition-delay:0.16s">
+          <div class="service-icon">🛍️</div>
+          <div class="service-name">E-Commerce Websites</div>
+          <p class="service-desc">Full-featured online stores optimized for sales. From product pages to checkout flows — every element is crafted to reduce drop-off and maximize revenue per visitor.</p>
+          <div class="service-arrow">Learn more →</div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card fade-up" style="transition-delay:0.24s">
+          <div class="service-icon">🎓</div>
+          <div class="service-name">Digital Product Sites</div>
+          <p class="service-desc">Course platforms, membership sites, and digital storefronts. Sell your knowledge with a platform that handles enrollment, payments, and delivery — beautifully.</p>
+          <div class="service-arrow">Learn more →</div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-card fade-up" style="transition-delay:0.32s">
+          <div class="service-icon">🔧</div>
+          <div class="service-name">Website Revamps</div>
+          <p class="service-desc">Transform your outdated website into a high-converting asset. We audit, redesign, and rebuild with a clear ROI focus — without disrupting your existing traffic.</p>
+          <div class="service-arrow">Learn more →</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PORTFOLIO SECTION
+  ============================================================ -->
+  <section id="portfolio" class="section">
+    <div class="container">
+      <div class="section-label">Our Work</div>
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:20px;">
+        <h2 class="section-title">Projects We're<br/>Proud Of</h2>
+        <a href="#contact" class="btn btn-ghost" style="margin-bottom:16px">Start Your Project →</a>
+      </div>
+
+      <div class="portfolio-grid">
+
+        <!-- Project 1 -->
+        <div class="portfolio-card fade-up">
+          <div class="portfolio-thumb">
+            <div class="portfolio-thumb-inner thumb-1">
+              <div class="thumb-nav-bar">
+                <div class="t-dot t-dot-r"></div>
+                <div class="t-dot t-dot-y"></div>
+                <div class="t-dot t-dot-g"></div>
+                <div class="t-logo-bar c-accent" style="width:36px;height:4px;"></div>
+              </div>
+              <div class="thumb-content">
+                <div class="t-hero-block" style="background:rgba(0,229,160,0.12)"></div>
+                <div class="t-row"><div class="t-card"></div><div class="t-card"></div><div class="t-card"></div></div>
+                <div class="t-wide"></div>
+                <div class="t-mid"></div>
+                <div class="t-row"><div class="t-card" style="height:40px"></div><div class="t-card" style="height:40px"></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <div class="portfolio-tag">SaaS · Landing Page</div>
+            <div class="portfolio-name">FlowMetrics Dashboard</div>
+            <p class="portfolio-desc">A high-converting SaaS landing page that increased trial signups by 212% in 90 days.</p>
+            <a href="#" class="portfolio-link">View Case Study →</a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="portfolio-card fade-up" style="transition-delay:0.1s">
+          <div class="portfolio-thumb">
+            <div class="portfolio-thumb-inner thumb-2">
+              <div class="thumb-nav-bar">
+                <div class="t-dot t-dot-r"></div>
+                <div class="t-dot t-dot-y"></div>
+                <div class="t-dot t-dot-g"></div>
+                <div class="t-logo-bar c-purple" style="width:36px;height:4px;"></div>
+              </div>
+              <div class="thumb-content">
+                <div class="t-hero-block" style="background:rgba(168,85,247,0.12)"></div>
+                <div class="t-wide" style="background:rgba(168,85,247,0.2)"></div>
+                <div class="t-mid"></div>
+                <div class="t-row"><div class="t-card" style="height:32px"></div><div class="t-card" style="height:32px"></div><div class="t-card" style="height:32px"></div></div>
+                <div class="t-wide"></div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <div class="portfolio-tag">E-Commerce · Shopify</div>
+            <div class="portfolio-name">Luxe Beauty Co.</div>
+            <p class="portfolio-desc">Premium e-commerce store with custom Shopify theme. Launched with $40K revenue in month one.</p>
+            <a href="#" class="portfolio-link">View Case Study →</a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="portfolio-card fade-up" style="transition-delay:0.2s">
+          <div class="portfolio-thumb">
+            <div class="portfolio-thumb-inner thumb-3">
+              <div class="thumb-nav-bar">
+                <div class="t-dot t-dot-r"></div>
+                <div class="t-dot t-dot-y"></div>
+                <div class="t-dot t-dot-g"></div>
+                <div class="t-logo-bar c-green" style="width:36px;height:4px;"></div>
+              </div>
+              <div class="thumb-content">
+                <div class="t-row" style="height:60px">
+                  <div class="t-card" style="background:rgba(34,197,94,0.1)"></div>
+                  <div style="flex:1.5;display:flex;flex-direction:column;gap:6px;padding:4px">
+                    <div class="t-wide"></div>
+                    <div class="t-mid"></div>
+                    <div class="t-wide" style="width:40%;height:16px;background:rgba(34,197,94,0.3);border-radius:50px"></div>
+                  </div>
+                </div>
+                <div class="t-row"><div class="t-card"></div><div class="t-card"></div><div class="t-card"></div></div>
+                <div class="t-wide"></div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <div class="portfolio-tag">Course Platform · Digital Product</div>
+            <div class="portfolio-name">MindScale Academy</div>
+            <p class="portfolio-desc">Course enrollment platform with integrated checkout. Sold 850+ seats in the first launch week.</p>
+            <a href="#" class="portfolio-link">View Case Study →</a>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="portfolio-card fade-up" style="transition-delay:0.3s">
+          <div class="portfolio-thumb">
+            <div class="portfolio-thumb-inner thumb-4">
+              <div class="thumb-nav-bar">
+                <div class="t-dot t-dot-r"></div>
+                <div class="t-dot t-dot-y"></div>
+                <div class="t-dot t-dot-g"></div>
+                <div class="t-logo-bar c-orange" style="width:36px;height:4px;"></div>
+              </div>
+              <div class="thumb-content">
+                <div class="t-hero-block" style="background:rgba(249,115,22,0.1)"></div>
+                <div class="t-row" style="align-items:center">
+                  <div class="t-card" style="height:22px;background:rgba(249,115,22,0.25);border-radius:50px;max-width:64px"></div>
+                  <div class="t-card" style="height:22px;background:rgba(249,115,22,0.15);border-radius:50px;max-width:64px"></div>
+                </div>
+                <div class="t-row"><div class="t-card" style="height:36px"></div><div class="t-card" style="height:36px"></div></div>
+                <div class="t-wide"></div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <div class="portfolio-tag">Business Website · Agency</div>
+            <div class="portfolio-name">Apex Legal Partners</div>
+            <p class="portfolio-desc">Authority-building business site for a law firm. Inbound consultations up 3x within 60 days of launch.</p>
+            <a href="#" class="portfolio-link">View Case Study →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROCESS SECTION
+  ============================================================ -->
+  <section id="process" class="section section-alt">
+    <div class="container">
+      <div style="text-align:center">
+        <div class="section-label" style="justify-content:center">How It Works</div>
+        <h2 class="section-title">From Idea to Launch<br/>in 3 Simple Steps</h2>
+        <p class="section-sub" style="margin:0 auto">No confusing back-and-forth. Our streamlined process gets your website live fast — without compromising on quality.</p>
+      </div>
+
+      <div class="process-grid">
+
+        <div class="process-step fade-up">
+          <div class="process-num">01</div>
+          <h3 class="process-title">Submit Requirements</h3>
+          <p class="process-desc">Fill out our quick project brief. Tell us about your business, goals, style preferences, and timeline. Takes less than 5 minutes.</p>
+        </div>
+
+        <div class="process-step fade-up" style="transition-delay:0.15s">
+          <div class="process-num">02</div>
+          <h3 class="process-title">We Build It</h3>
+          <p class="process-desc">Our team gets to work. You'll receive design mockups for review before development begins. We build fast without cutting corners.</p>
+        </div>
+
+        <div class="process-step fade-up" style="transition-delay:0.3s">
+          <div class="process-num">03</div>
+          <h3 class="process-title">You Launch</h3>
+          <p class="process-desc">After your approval, we handle deployment, testing, and go-live. You launch with full ownership and ongoing support.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TESTIMONIALS SECTION
+  ============================================================ -->
+  <section id="testimonials" class="section">
+    <div class="container">
+      <div class="section-label">Client Stories</div>
+      <h2 class="section-title">Trusted by Founders<br/>& Business Owners</h2>
+
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card fade-up">
+          <div class="testimonial-quote">"</div>
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">MadaraWeb delivered a website that completely changed how we generate leads. Within 30 days of launching, our inquiry volume doubled. The attention to detail and conversion-focused thinking was unlike anything I'd experienced with other agencies.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">RT</div>
+            <div>
+              <div class="author-name">Rohan Trivedi</div>
+              <div class="author-role">CEO, Offer King Clothes</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card fade-up" style="transition-delay:0.12s">
+          <div class="testimonial-quote">"</div>
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">I was skeptical about the timeline they promised, but they delivered ahead of schedule and the quality blew me away. Our e-commerce store made back the investment in the first week alone. I've since referred three other business owners.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">MK</div>
+            <div>
+              <div class="author-name">Marcus Kim</div>
+              <div class="author-role">Founder, Print T-Sherts</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card fade-up" style="transition-delay:0.24s">
+          <div class="testimonial-quote">"</div>
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">Working with MadaraWeb was the best investment I made for my online course launch. They didn't just build a website — they built a sales engine. We hit our enrollment goal three days before the launch window closed.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">AL</div>
+            <div>
+              <div class="author-name">Aisha Laurent</div>
+              <div class="author-role">Creator & Educator, SkillForge</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CTA SECTION
+  ============================================================ -->
+  <section id="cta" class="section">
+    <div class="container">
+      <div class="cta-inner fade-up">
+        <div class="section-label" style="justify-content:center">Ready to Start?</div>
+        <h2 class="section-title">Your Website Should Be<br/>Working For You, Not Against You</h2>
+        <p class="section-sub">Stop losing potential customers to a website that doesn't convert. Let's build something that actually grows your business.</p>
+        <div class="cta-actions">
+          <a href="#contact" class="btn btn-primary">Get a Free Consultation →</a>
+          <a href="#portfolio" class="btn btn-ghost">See Our Work First</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT SECTION
+  ============================================================ -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-label">Let's Talk</div>
+      <h2 class="section-title">Start Your Project Today</h2>
+      <p class="section-sub">Fill out the form and we'll get back to you within 24 hours with a tailored proposal.</p>
+
+      <div class="contact-grid">
+        <!-- Left: Contact info -->
+        <div class="contact-info fade-up">
+          <h3>We'd Love to Hear<br/>About Your Project</h3>
+          <p>Whether you have a detailed brief or just a rough idea — we can work with it. Tell us what you need and let's figure out how to make it happen.</p>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">📧</div>
+            <div class="contact-detail-text">
+              <strong>Email</strong>
+              ruke9998@gmail.com
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">⚡</div>
+            <div class="contact-detail-text">
+              <strong>Response Time</strong>
+              Within 12 hours, guaranteed
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">🌍</div>
+            <div class="contact-detail-text">
+              <strong>Working Hours</strong>
+              Mon–Fri, 9AM–6PM IST
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">📅</div>
+            <div class="contact-detail-text">
+              <strong>Average Turnaround</strong>
+              5–10 business days
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="fade-up" style="transition-delay:0.1s">
+          <div class="contact-form-wrap">
+            <form id="contact-form" novalidate>
+
+              <!-- Row: Name + Email -->
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Full Name *</label>
+                  <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+                  <div class="error-msg" id="name-error">Please enter your name.</div>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address *</label>
+                  <input type="email" id="email" name="email" placeholder="jane@company.com" required />
+                  <div class="error-msg" id="email-error">Please enter a valid email.</div>
+                </div>
+              </div>
+
+              <!-- Phone -->
+              <div class="form-group">
+                <label for="phone">Phone Number <span style="color:var(--text-dim);font-weight:400;text-transform:none;letter-spacing:0">(optional)</span></label>
+                <input type="tel" id="phone" name="phone" placeholder="+91 92624 02400" />
+              </div>
+
+              <!-- Service -->
+              <div class="form-group">
+                <label for="service">Service Interested In *</label>
+                <select id="service" name="service" required>
+                  <option value="" disabled selected>Select a service</option>
+                  <option value="landing-page">Landing Page</option>
+                  <option value="business-website">Business Website</option>
+                  <option value="ecommerce">E-Commerce Website</option>
+                  <option value="digital-product">Digital Product Site</option>
+                  <option value="revamp">Website Revamp</option>
+                  <option value="other">Other / Not Sure Yet</option>
+                </select>
+                <div class="error-msg" id="service-error">Please select a service.</div>
+              </div>
+
+              <!-- Message -->
+              <div class="form-group">
+                <label for="message">Tell Us About Your Project *</label>
+                <textarea id="message" name="message" placeholder="Share your goals, timeline, budget range, or anything else that would help us understand your project..." required></textarea>
+                <div class="error-msg" id="message-error">Please tell us a bit about your project.</div>
+              </div>
+
+              <!-- Submit -->
+              <button type="submit" class="btn btn-primary form-submit" id="submit-btn">
+                <span class="spinner"></span>
+                <span id="btn-text">Send Message →</span>
+              </button>
+
+              <!-- Status message -->
+              <div id="form-status"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo">Madara<span>Web</span></a>
+          <p>We build premium, conversion-focused websites for businesses serious about growth. Your website should be your best employee.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Landing Pages</a></li>
+            <li><a href="#services">Business Websites</a></li>
+            <li><a href="#services">E-Commerce</a></li>
+            <li><a href="#services">Digital Products</a></li>
+            <li><a href="#services">Website Revamps</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#process">Our Process</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:hello@devcraft.studio">ruke9998@gmail.com</a></li>
+            <li><a href="#">Twitter / X</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2025 <a href="https://instagram.com/https_priyesh" target="_blank">MadaraWeb</a>. All rights reserved. Built with precision.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn" aria-label="Twitter">𝕏</a>
+          <a href="#" class="social-btn" aria-label="LinkedIn">In</a>
+          <a href="#" class="social-btn" aria-label="Instagram">IG</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button id="scroll-top" aria-label="Scroll to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
