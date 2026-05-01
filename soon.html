@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Case Study — Coming Soon</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle at top, #0f172a, #020617);
+      color: #e5e7eb;
+      padding: 20px;
+    }
+
+    .container {
+      text-align: center;
+      max-width: 900px;
+      width: 100%;
+    }
+
+    .label {
+      color: #00f5c4;
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      display: inline-block;
+      position: relative;
+    }
+
+    .label::before {
+      content: "";
+      width: 40px;
+      height: 2px;
+      background: #00f5c4;
+      display: inline-block;
+      margin-right: 10px;
+      vertical-align: middle;
+      box-shadow: 0 0 8px #00f5c4;
+    }
+
+    h1 {
+      font-size: clamp(32px, 6vw, 72px);
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    .highlight {
+      color: #00f5c4;
+      text-shadow: 0 0 20px rgba(0, 245, 196, 0.4);
+    }
+
+    p {
+      font-size: clamp(14px, 2.5vw, 18px);
+      color: #94a3b8;
+      max-width: 600px;
+      margin: 0 auto 30px;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      border-radius: 999px;
+      font-size: 14px;
+      color: #00f5c4;
+      border: 1px solid rgba(0, 245, 196, 0.3);
+      background: rgba(0, 245, 196, 0.05);
+      text-decoration: none;
+      transition: 0.3s ease;
+      backdrop-filter: blur(10px);
+    }
+
+    .btn:hover {
+      background: rgba(0, 245, 196, 0.1);
+      box-shadow: 0 0 15px rgba(0, 245, 196, 0.3);
+    }
+
+    /* 🔥 Mobile tweaks (down to 330px) */
+    @media (max-width: 400px) {
+      body {
+        padding: 15px;
+      }
+
+      h1 {
+        line-height: 1.2;
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+      .btn {
+        width: 100%;
+        padding: 12px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="label">Case Study</div>
+
+    <h1>
+      Something Big is <br />
+      <span class="highlight">Coming Soon</span>
+    </h1>
+
+    <p>
+      We're currently crafting detailed case studies showcasing real results, 
+      performance metrics, and success stories. Stay tuned — something powerful is on the way.
+    </p>
+
+    <a href="https://www.madaraweb.com/" class="btn">← Back to Home</a>
+  </div>
+</body>
+</html>
