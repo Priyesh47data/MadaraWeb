@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link rel="stylesheet" href="/style.css">
+    <meta name="description"
+        content="Explore web development, automation, and digital services offered by Madara Web Solutions.">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.madaraweb.com/services" />
+
+    <!-- Website Schema -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "https://www.madaraweb.com",
+    "name": "Madara Web Solutions",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.madaraweb.com/?s={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+    <!-- Organization Schema (Logo for Google) -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Madara Web Solutions",
+    "url": "https://www.madaraweb.com",
+    "logo": "https://res.cloudinary.com/dh5wlux0q/image/upload/v1777756339/Logo_inisum.jpg"
+  }
+  </script>
+</head>
+
+
+<body>
+
+    <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+
+    <nav id="navbar">
+        <div class="container nav-inner">
+            <!-- Logo -->
+            <a href="/index.html" class="nav-logo">Madara<span>Web</span></a>
+
+            <!-- Desktop links -->
+            <ul class="nav-links">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="/#process">Process</a></li>
+                <li><a href="/portfolio">Portfolio</a></li>
+                <li><a href="/#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <!-- Theme toggle -->
+                <button id="theme-toggle" aria-label="Toggle theme">
+                    <svg id="icon-sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none">
+                        <circle cx="12" cy="12" r="4" />
+                        <line x1="12" y1="2" x2="12" y2="6" />
+                        <line x1="12" y1="18" x2="12" y2="22" />
+                        <line x1="4.93" y1="4.93" x2="7.76" y2="7.76" />
+                        <line x1="16.24" y1="16.24" x2="19.07" y2="19.07" />
+                        <line x1="2" y1="12" x2="6" y2="12" />
+                        <line x1="18" y1="12" x2="22" y2="12" />
+                        <line x1="4.93" y1="19.07" x2="7.76" y2="16.24" />
+                        <line x1="16.24" y1="7.76" x2="19.07" y2="4.93" />
+                    </svg>
+                    <svg id="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                    </svg>
+                </button>
+
+                <!-- CTA button -->
+                <a href="#contact" class="btn btn-primary nav-cta">Get Started →</a>
+
+                <!-- Hamburger (mobile) -->
+                <button class="hamburger" id="hamburger" aria-label="Open menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile drawer -->
+        <div class="mobile-nav" id="mobile-nav">
+            <a href="/index.html" class="mobile-link">Home</a>
+            <a href="#" class="mobile-link">Services</a>
+            <a href="#process" class="mobile-link">Process</a>
+            <a href="/portfolio" class="mobile-link">Portfolio</a>
+            <a href="/#contact" class="mobile-link" target="_blank">Contact</a>
+            <a href="/#contact" class="btn btn-primary" style="margin-top:8px;justify-content:center;"
+                target="_blank">Get Started →</a>
+        </div>
+    </nav>
+
+    <!-- ============================================================
+       SERVICES SECTION
+  ============================================================ -->
+    <section id="services" class="section section-alt">
+        <div class="container">
+            <div class="section-label">What We Do</div>
+            <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:20px;">
+                <div>
+                    <h2 class="section-title">Two Things We Do <br />Exceptionally Well</h2>
+                </div>
+                <p class="section-sub" style="margin-bottom:0">We specialise in exactly two things: websites that
+                    convert
+                    visitors into clients, and AI systems that work for your business 24/7.</p>
+            </div>
+
+            <div class="section-label-web"> 🌍Website Development <span
+                    style="font-size: 40px; margin: 0 0 4px -8px;">→</span></div>
+
+            <div class="services-grid">
+
+                <!-- Service 1 -->
+                <div class="service-card fade-up">
+                    <div class="service-icon">🎯</div>
+                    <div class="service-name">Landing Pages</div>
+                    <p class="service-desc">Precision-built, single-goal pages designed to capture leads and drive
+                        action. A/B
+                        tested layouts with proven copy frameworks that convert cold traffic into warm leads.</p>
+                    <div class="service-arrow"><a href="https://www.madaraweb.com/#contact" target="_blank">Get started
+                            →</a>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card fade-up" style="transition-delay:0.08s">
+                    <div class="service-icon">🏢</div>
+                    <div class="service-name">Business Websites</div>
+                    <p class="service-desc">Professional multi-page websites that build trust, showcase your brand, and
+                        generate
+                        consistent inbound inquiries. Built for speed, SEO, and long-term growth.</p>
+                    <div class="service-arrow"><a href="https://www.madaraweb.com/#contact" target="_blank">Get started
+                            →</a>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card fade-up" style="transition-delay:0.16s">
+                    <div class="service-icon">🛍️</div>
+                    <div class="service-name">E-Commerce Websites</div>
+                    <p class="service-desc">Full-featured online stores optimized for sales. From product pages to
+                        checkout flows
+                        — every element is crafted to reduce drop-off and maximize revenue per visitor.</p>
+                    <div class="service-arrow"><a href="https://www.madaraweb.com/#contact" target="_blank">Get started
+                            →</a>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card fade-up" style="transition-delay:0.24s">
+                    <div class="service-icon">🎓</div>
+                    <div class="service-name">Digital Product Sites</div>
+                    <p class="service-desc">Course platforms, membership sites, and digital storefronts. Sell your
+                        knowledge with
+                        a platform that handles enrollment, payments, and delivery — beautifully.</p>
+                    <div class="service-arrow"><a href="https://www.madaraweb.com/#contact" target="_blank">Get started
+                            →</a>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- AI Services-->
+            <div class="section-label-web">🤖 AI Automation<span style="font-size: 40px; margin: 0 0 4px -8px;">→</span>
+            </div>
+
+            <div class="services-grid">
+
+                <!-- Service 1 -->
+                <div class="service-card fade-up">
+                    <div class="service-icon">📲</div>
+                    <div class="service-name">WhatsApp Automation</div>
+                    <p class="service-desc">Turn WhatsApp into your 24/7 sales assistant. Automate order taking,
+                        support,
+                        appointment reminders and follow-ups without lifting a finger.</p>
+                    <div class="service-arrow"><a href="https://www.madaraweb.com/#contact" target="_blank">Get started
+                            →</a>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card fade-up" style="transition-delay:0.08s">
+                    <div class="service-icon">📅</div>
+                    <div class="service-name">Booking Systems</div>
+                    <p class="service-desc">Let clients book appointments, consultations, or services directly — with
+                        automatic
+                        confirmation, reminders, and calendar sync. Zero no-shows.</p>
+                    <div class="service-arrow"><a href="https://www.madaraweb.com/#contact" target="_blank">Get started
+                            →</a>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card fade-up" style="transition-delay:0.16s">
+                    <div class="service-icon">🤖</div>
+                    <div class="service-name">AI Chatbots</div>
+                    <p class="service-desc">A smart chatbot trained on your business that answers questions, qualifies
+                        leads, and
+                        books calls — directly on your website or WhatsApp, 24/7.</p>
+                    <div class="service-arrow"><a href="https://www.madaraweb.com/#contact" target="_blank">Get started
+                            →</a>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card fade-up" style="transition-delay:0.24s">
+                    <div class="service-icon">🔄</div>
+                    <div class="service-name">Lead Funnels & CRM</div>
+                    <p class="service-desc">Capture leads, auto-follow up via WhatsApp/email, and push data to your CRM
+                        — so no
+                        lead ever falls through the cracks again.</p>
+                    <div class="service-arrow"><a href="https://www.madaraweb.com/#contact" target="_blank">Get started
+                            →</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+       CTA SECTION
+  ============================================================ -->
+    <section id="cta" class="section">
+        <div class="container">
+            <div class="cta-inner fade-up">
+                <div class="section-label" style="justify-content:center">READY TO SCALE?</div>
+                <h2 class="section-title">We Build Websites & AI Systems That Drive Growth — Automatically</h2>
+                <p class="section-sub">We design high-performing websites and AI-powered systems that capture leads,
+                    automate
+                    workflows, and grow your business 24/7.</p>
+                <div class="cta-actions">
+                    <a href="/#contact" class="btn btn-primary">Get a Free Consultation →</a>
+                    <a href="/index.html" class="btn btn-ghost">See Our Work First</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+    <footer>
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo">Madara<span>Web</span></a>
+                    <p>We build premium, conversion-focused websites for businesses serious about growth. Your website
+                        should be
+                        your best employee.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Website Dev</h4>
+                    <ul>
+                        <li><a href="#services">Landing Pages</a></li>
+                        <li><a href="#services">Business Websites</a></li>
+                        <li><a href="#services">E-Commerce</a></li>
+                        <li><a href="#services">Digital Products</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>AI Automation</h4>
+                    <ul>
+                        <li><a href="/#contact">WhatsApp Automation</a></li>
+                        <li><a href="/#contact">Booking Systems</a></li>
+                        <li><a href="/#contact">AI Chatbots</a></li>
+                        <li><a href="/#contact">Lead Funnels</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/#portfolio">Portfolio</a></li>
+                        <li><a href="/#process">Our Process</a></li>
+                        <li><a href="/#testimonials">Testimonials</a></li>
+                        <li><a href="/#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copy">© 2025 <a href="https://instagram.com/https_priyesh"
+                        target="_blank">MadaraWeb</a>. All
+                    rights reserved. Built With ❤️ By Pr.</p>
+                <div class="footer-social">
+                    <a href="#" class="social-btn" aria-label="Twitter">𝕏</a>
+                    <a href="https://www.linkedin.com/in/priyesh50/" class="social-btn" aria-label="LinkedIn">In</a>
+                    <a href="https://instagram.com/https_priyesh" class="social-btn" aria-label="Instagram">IG</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to top -->
+    <button id="scroll-top" aria-label="Scroll to top">↑</button>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

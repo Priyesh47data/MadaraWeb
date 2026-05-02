@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MadaraWeb — We Build Websites That Convert</title>
+  <title>MadaraWeb — Website & AI Automation</title>
   <meta name="description"
     content="DevCraft builds premium websites that turn visitors into paying clients. Landing pages, business sites, e-commerce & digital products." />
 
@@ -19,6 +19,36 @@
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
   <link rel="stylesheet" href="style.css">
+    
+        <!-- Canonical -->
+    <link rel="canonical" href="https://www.madaraweb.com/" />
+
+    <!-- Website Schema -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "https://www.madaraweb.com",
+    "name": "Madara Web Solutions",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.madaraweb.com/?s={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+    <!-- Organization Schema (Logo for Google) -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Madara Web Solutions",
+    "url": "https://www.madaraweb.com",
+    "logo": "https://res.cloudinary.com/dh5wlux0q/image/upload/v1777756339/Logo_inisum.jpg"
+  }
+  </script>
+
 </head>
 
 <body>
@@ -33,11 +63,11 @@
 
       <!-- Desktop links -->
       <ul class="nav-links">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#process">Process</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="/" target="_blank">Home</a></li>
+        <li><a href="/services" target="_blank">Services</a></li>
+        <li><a href="#process" target="_blank">Process</a></li>
+        <li><a href="/portfolio" target="_blank">Portfolio</a></li>
+        <li><a href="/contact" target="_blank">Contact</a></li>
       </ul>
 
       <div class="nav-right">
@@ -62,7 +92,7 @@
         </button>
 
         <!-- CTA button -->
-        <a href="#contact" class="btn btn-primary nav-cta">Get Started →</a>
+        <a href="/contact" class="btn btn-primary nav-cta">Get Started →</a>
 
         <!-- Hamburger (mobile) -->
         <button class="hamburger" id="hamburger" aria-label="Open menu">
@@ -73,12 +103,12 @@
 
     <!-- Mobile drawer -->
     <div class="mobile-nav" id="mobile-nav">
-      <a href="#hero" class="mobile-link">Home</a>
-      <a href="#services" class="mobile-link">Services</a>
+      <a href="/" class="mobile-link">Home</a>
+      <a href="/services" class="mobile-link" target="_blank">Services</a>
       <a href="#process" class="mobile-link">Process</a>
-      <a href="#portfolio" class="mobile-link">Portfolio</a>
-      <a href="#contact" class="mobile-link">Contact</a>
-      <a href="#contact" class="btn btn-primary" style="margin-top:8px;justify-content:center;">Get Started →</a>
+      <a href="/portfolio" class="mobile-link" target="_blank">Portfolio</a>
+      <a href="/contact" class="mobile-link">Contact</a>
+      <a href="/contact" class="btn btn-primary" style="margin-top:8px;justify-content:center;" target="_blank">Get Started →</a>
     </div>
   </nav>
 
